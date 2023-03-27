@@ -1,3 +1,61 @@
+/* HELPER */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 35px;
+}
+
+[class*="col-"] {
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    flex-basis: auto;
+}
+
+.p05em{padding: 0.5em;}
+.p1em{padding: 1em;}
+.p2em{padding: 2em;}
+.pl05em{padding-left:0.5em}
+.mb1em{margin-bottom: 1em;}
+.mb2em{margin-bottom: 2em;}
+
+.col-1  {flex-basis: calc((100% / 12) *  1); max-width: calc((100% / 12) *  1);}
+.col-2  {flex-basis: calc((100% / 12) *  2); max-width: calc((100% / 12) *  2);}
+.col-3  {flex-basis: calc((100% / 12) *  3); max-width: calc((100% / 12) *  3);}
+.col-4  {flex-basis: calc((100% / 12) *  4); max-width: calc((100% / 12) *  4);}
+.col-5  {flex-basis: calc((100% / 12) *  5); max-width: calc((100% / 12) *  5);}
+.col-6  {flex-basis: calc((100% / 12) *  6); max-width: calc((100% / 12) *  6);}
+.col-7  {flex-basis: calc((100% / 12) *  7); max-width: calc((100% / 12) *  7);}
+.col-8  {flex-basis: calc((100% / 12) *  8); max-width: calc((100% / 12) *  8);}
+.col-9  {flex-basis: calc((100% / 12) *  9); max-width: calc((100% / 12) *  9);}
+.col-10 {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
+.col-11 {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
+.col-12 {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+
+.col-offset-1  {margin-left: calc((100% / 12) *   1);}
+.col-offset-2  {margin-left: calc((100% / 12) *   2);}
+.col-offset-3  {margin-left: calc((100% / 12) *   3);}
+.col-offset-4  {margin-left: calc((100% / 12) *   4);}
+.col-offset-5  {margin-left: calc((100% / 12) *   5);}
+.col-offset-6  {margin-left: calc((100% / 12) *   6);}
+.col-offset-7  {margin-left: calc((100% / 12) *   7);}
+.col-offset-8  {margin-left: calc((100% / 12) *   8);}
+.col-offset-9  {margin-left: calc((100% / 12) *   9);}
+.col-offset-10 {margin-left: calc((100% / 12) *  10);}
+.col-offset-11 {margin-left: calc((100% / 12) *  11);}
+.col-offset-12 {margin-left: calc((100% / 12) *  12);}
 /****************** FLEX *******************/
 
 .flex{display: flex;}
@@ -14,7 +72,7 @@
 .h100{height: 100%;}
 
 header{
-    height: 80px;
+    height: 70px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -25,7 +83,8 @@ header{
 }
 
 .menu{
-    font-size: 30px;
+    font-size: 25px;
+    color: black;
 }
 
 .logoBox{
@@ -39,18 +98,21 @@ header{
 }
 
 .navBar img{
-    height: 50px;
+    height: 40px;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+.hero{
+    height: 240px;
+    background-image: url(./img/office.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
 }
 
-img {
-    vertical-align: middle;
-    border-style: none;
+section p{
+    text-align: justify;
 }
+
 
 
 /* MEDIA QUERY SMALL */
@@ -68,6 +130,11 @@ img {
     .col-10-s {flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) * 10);}
     .col-11-s {flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) * 11);}
     .col-12-s {flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) * 12);}
+
+    .hero{
+        height: 350px;
+    }
+
     }
     
     /* MEDIA QUERY MEDIUM */
