@@ -24,10 +24,15 @@
     flex-basis: auto;
 }
 
+.radius{
+    border-radius: 25px;
+}
+
 .p05em{padding: 0.5em;}
 .p1em{padding: 1em;}
 .p2em{padding: 2em;}
 .pl05em{padding-left:0.5em}
+.mb05em{margin-bottom: 0.5em;}
 .mb1em{margin-bottom: 1em;}
 .mb2em{margin-bottom: 2em;}
 
@@ -69,6 +74,10 @@
 .alignEnd{align-items: flex-end;}
 /****************** FLEX END *******************/
 
+/****************** COLORS *******************/
+.white{color: white;}
+
+.h50{height: 50%;}
 .h100{height: 100%;}
 
 header{
@@ -112,6 +121,15 @@ header{
 section p{
     text-align: justify;
 }
+
+.card img{
+    object-fit: contain;
+    width: 100%;
+}
+
+
+
+
 
 
 
